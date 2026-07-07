@@ -1,5 +1,5 @@
 
-This repository documents my personal HomeLab infrastructure, serving as a hub for development, system administration practice, and machine learning experimentation.
+This repository documents my personal homelab infrastructure, serving as a hub for development, system administration practice, and machine learning experimentation.
 
 ## Hardware Specifications
 * **CPU**: Intel Core i3-10100F (4 cores, 8 threads) @ 4.30 GHz
