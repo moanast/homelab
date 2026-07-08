@@ -1,4 +1,5 @@
-crowdsec:
+services:
+  crowdsec:
     image: crowdsecurity/crowdsec:latest
     container_name: crowdsec
     environment:
@@ -7,3 +8,6 @@ crowdsec:
       - crowdsec_data:/var/lib/crowdsec/data
       - /var/log/nginx:/var/log/nginx:ro
     restart: unless-stopped
+
+volumes:
+  crowdsec_data:
