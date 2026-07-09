@@ -1,0 +1,7 @@
+title: Homelab
+layout:
+  - HomeLab:
+      style: columns
+      columns: 4
+theme: dark 
+color: slate 
