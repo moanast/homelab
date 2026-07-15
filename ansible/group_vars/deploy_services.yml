@@ -1,0 +1,45 @@
+---
+- name: Deploy Homelab Services
+  hosts: all
+  become: true
+  vars:
+    base_path: /opt/homelab # Setează calea unde vrei să stea serviciile
+
+  tasks:
+    - name: basepath
+      file:
+        path: "{{ base_path }}/{{ item }}"
+        state: directory
+        owner: root
+        group: root
+      loop:
+        - crowdsec
+        - homepage
+        - immich
+        - nginx
+        - uptime-kuma
+        - vaultwarden
+
+    - name: docker-compose filecopy
+      copy:
+        src: "../services/{{ item }}/docker-compose.yml"
+        dest: "{{ base_path }}/{{ item }}/docker-compose.yml"
+      loop:
+        - crowdsec
+        - homepage
+        - immich
+        - nginx
+        - uptime-kuma
+        - vaultwarden
+
+    - name: turning on the services
+      community.docker.docker_compose_v2:
+        project_src: "{{ base_path }}/{{ item }}"
+        state: present
+      loop:
+        - crowdsec
+        - homepage
+        - immich
+        - nginx
+        - uptime-kuma
+        - vaultwarden
