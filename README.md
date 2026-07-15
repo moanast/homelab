@@ -1,4 +1,4 @@
-#### Homelab 
+# Homelab 
 
 This repository contains my declarative infrastructure setup for managing homelab services using Ansible. The project is structured to ensure repeatable, stable, and automated deployments across LXC containers while keeping configuration under version control.
 ### Project Structure
