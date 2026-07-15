@@ -1,7 +1,7 @@
 # Homelab 
 
 This repository contains my declarative infrastructure setup for managing homelab services using Ansible. The project is structured to ensure repeatable, stable, and automated deployments across LXC containers while keeping configuration under version control.
-### Project Structure
+## Project Structure
 
     inventory.ini: Inventory file containing the list of target LXC containers.
 
@@ -11,7 +11,7 @@ This repository contains my declarative infrastructure setup for managing homela
 
     services/: Directory containing docker-compose.yml files for each service.
 
-### Prerequisites
+## Prerequisites
 
     Ansible installed on your control node.
 
@@ -21,7 +21,7 @@ This repository contains my declarative infrastructure setup for managing homela
 
     Docker and Docker Compose V2 installed on target containers.
 
-### Usage
+## Usage
 
     Clone the repository:
     git clone https://github.com/moanast/homelab.git
@@ -35,14 +35,14 @@ Bash
 
     ansible-playbook -i inventory.ini deploy_services.yml
 
-### Security Considerations
+## Security Considerations
 
     No Secrets: This repository does not contain passwords or API keys in plain text.
 
     Infrastructure Isolation: The network architecture separates the firewall (pfSense/OPNsense) from the virtualization server (Proxmox), ensuring network continuity during server maintenance.
 
-### Notes
-# Infrastructure Overview (pve1)
+## Notes
+### Infrastructure Overview (pve1)
 
     CPU: Intel(R) Core(TM) i3-10100F (8 threads) @ 4.30 GHz
 
@@ -54,9 +54,9 @@ Bash
 
     Storage: 512 GiB SATA SSD
 
-### Managed Services
+## Managed Services
 
-# This Ansible repository currently automates the deployment and lifecycle management of the following containerized services:  
+### This Ansible repository currently automates the deployment and lifecycle management of the following containerized services:  
 
 Crowdsec: Security and intrusion prevention.  
 
