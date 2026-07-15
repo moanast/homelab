@@ -24,10 +24,7 @@ This repository contains my declarative infrastructure setup for managing homela
 ### Usage
 
     Clone the repository:
-    Bash
-
-git clone https://github.com/moanast/homelab.git
-cd homelab
+    git clone https://github.com/moanast/homelab.git
 
 ## Configure Inventory:
 Edit inventory.ini and add the IP addresses of your LXC containers.
