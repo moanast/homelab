@@ -3,7 +3,7 @@
   hosts: all
   become: true
   vars:
-    base_path: /opt/homelab # Setează calea unde vrei să stea serviciile
+    base_path: /opt/homelab 
 
   tasks:
     - name: basepath
