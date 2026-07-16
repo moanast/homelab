@@ -221,7 +221,6 @@ homelab/
     │   └── widgets.yaml
     ├── immich/
     │   ├── docker-compose.yml
-    │   └── immich/docker-compose.yml     # nested duplicate of the file above
     ├── nextcloud/docker-compose.yml
     ├── nginx/docker-compose.yml          # Nginx Proxy Manager
     ├── pi-hole/docker-compose.yml
