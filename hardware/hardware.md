@@ -6,9 +6,8 @@ This file describes hardware and host-level virtualization only. Service definit
 
 ---
 
-## Host: `homelab-node01`
+## Host: `pve1`
 
-*(Rename this section header if the host has a different inventory name — it should match the corresponding entry in `inventory/hosts.yml`.)*
 
 ### Hardware
 
