@@ -53,7 +53,5 @@ Running backup (PBS) and the thing being backed up on the same physical host is 
 ---
 
 ## Adding a New Host
-
-SOON!
-
+When a second host joins the homelab, duplicate the ## Host: <name> section above rather than merging specs into one table — each host gets its own hardware, software, and usage profile block. This keeps per-host capacity reasoning legible as the infrastructure grows past a single machine, and each section should stay traceable to its corresponding host_vars/<hostname>.yml entry in the Ansible inventory (see CONTRIBUTING.md, §5.1).
 When a second host joins the homelab, duplicate the `## Host: <name>` section above rather than merging specs into one table — each host gets its own hardware, software, and usage profile block. This keeps per-host capacity reasoning legible as the infrastructure grows past a single machine, and each section should stay traceable to its corresponding `host_vars/<hostname>.yml` entry in the Ansible inventory (see `CONTRIBUTING.md`, §5.1).
