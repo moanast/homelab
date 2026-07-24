@@ -1,0 +1,4 @@
+- hosts: ha_lxc
+  become: yes
+  roles:
+    - home-assistant
