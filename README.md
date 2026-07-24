@@ -1,4 +1,4 @@
-# 🏠 Homelab
+# Homelab
 
 *Declarative, Ansible-driven infrastructure for a Proxmox-based homelab — self-hosted media, productivity, security, and monitoring services running across isolated LXC containers.*
 
